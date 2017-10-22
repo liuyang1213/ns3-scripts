@@ -48,7 +48,7 @@ int
 main (int argc, char *argv[])
 {
   LogComponentEnable ("PacketSink", LOG_LEVEL_INFO);
-  LogComponentEnable ("OnOffApplication", LOG_LEVEL_INFO);
+  // LogComponentEnable ("OnOffApplication", LOG_LEVEL_INFO);
 
   //
   // Set up default values for the simulation.
