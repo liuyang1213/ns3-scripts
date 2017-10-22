@@ -165,9 +165,13 @@ main (int argc, char *argv[])
                          InetSocketAddress (Ipv4Address::GetAny (), multicastPort));
 
   ApplicationContainer sinkD = sink.Install (c1.Get (1)); // Node n4 
+  ApplicationContainer sinkE = sink.Install (c1.Get (0)); // Node n4 
 
   sinkD.Start (Seconds (1.0));
   sinkD.Stop (Seconds (10.0));
+  sinkE.Start (Seconds (1.0));
+  sinkE.Stop (Seconds (10.0));
+
 
   NS_LOG_INFO ("Configure Tracing.");
   //

@@ -49,6 +49,7 @@ int
 main (int argc, char *argv[])
 {
   LogComponentEnable ("PacketSink", LOG_LEVEL_INFO);
+  // LOG_PREFIX_TIME();
   // LogComponentEnable ("OnOffApplication", LOG_LEVEL_INFO);
 
   //
